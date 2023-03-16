@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_4sdp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/_14sdp"
+            android:src="@drawable/icon_share"
+            android:layout_gravity="end"
+            android:id="@+id/shareBtn"
+            android:layout_height="@dimen/_14sdp">
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/productTitle"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/productDetails"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/productCategory"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

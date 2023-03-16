@@ -1,0 +1,26 @@
+buildscript {
+    ext.lifecycle_version = "2.0.0"
+    ext.kotlin_version = "1.4.30"
+    ext.hilt_version = '2.42'
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.1.2'
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10'
+    }
+}
+allprojects {
+    repositories {
+        maven {
+            url 'https://maven.google.com/'
+        }
+        maven { url 'https://jitpack.io' }
+    }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
